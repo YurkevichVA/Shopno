@@ -13,6 +13,10 @@ h1 {
     color:  black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .subtitle {
     color: #8e908f;
 }
