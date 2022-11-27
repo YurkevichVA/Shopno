@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+hr {
+    border-color:rgb(166 248 241);
+    background-color: rgb(166 248 241);
+    color: rgb(166 248 241);
+}
+
 .subtitle {
     color: #8e908f;
 }
