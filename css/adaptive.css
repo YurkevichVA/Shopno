@@ -1,0 +1,151 @@
+@media (max-width: 480px) {
+   
+    .servise-picture {
+        display: none;
+     }
+ }
+
+
+@media (min-width: 480px) {
+    .container {
+     width: 450px;
+    }
+   
+    .servise-picture {
+        display: none;
+     }
+ }
+
+@media (min-width: 768px) {
+   .container {
+    width: 738px;
+   }
+   .servise-picture {
+    display: block;
+    width: 35%;
+    }
+
+ .portfolio_img {
+    width: 300px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-form {
+        width: 40%;
+    }
+  
+    .footer-map {
+        margin-top: 45px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+     width: 1170px;
+    }
+    
+    .section {
+     padding-top: 90px;
+     padding-bottom: 90px;
+    }
+
+    .hero__title {
+        font-size: 44px;
+    }
+
+    .menu__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 100%;
+        width: 100%;
+      
+        margin: 0;
+        padding: 20px 0;
+      
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: 250ms;
+        background-color: transparent;
+    }
+
+    .btn {
+        margin-top: 90px;
+      }
+
+    .section_title {
+        font-size: 36px;
+    
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+   
+    .service-title {
+        font-size: 24px;
+    }
+    .service-desc {
+        font-size: 20px;
+    }
+
+    .service-slider {
+        display: block;
+    }
+
+    .servise-picture {
+        display: none;
+    }
+    
+    .service-text {
+        width: 50%;
+        height: 100%;
+        text-align: left;
+      
+    }
+
+    .portfolio_img {
+        width: 370px;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .portfolio_content {
+        justify-content: space-around;
+    }    
+
+    .feedback-blok__slider {
+        display: block;
+    }
+    
+    .block-feedback__carousel-navigation {
+        display: block;
+    }
+
+    .feedback-block__slider-desc {
+        justify-content: space-between;
+    }
+
+    .feedback-block {
+        justify-content: space-between;
+    }
+
+    .partners-list {
+        row-gap: 60px;
+    }
+
+    .footer-form {
+        width: 60%;
+    }
+
+    .form-btn {
+        width: 200px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer-map {
+        margin-top: 10px;
+    }
+ }

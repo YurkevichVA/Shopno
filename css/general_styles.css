@@ -1,0 +1,101 @@
+:root {
+    --primary-text-color:#8e908f;
+    --accent-color: #82e2d8;
+    --title-text-color: black;
+    --hero-title-color: #575759;
+    --bgc-darkest-section: #eff0f2;
+    --bgc-slider-section: rgba(248, 248, 248, 0.625);
+    --bgc-section: #ffff;
+    --bgc-footer-section: #232325f0;
+}
+::selection {
+    color: #ffff;
+    background: #e9aed7;
+}
+* {
+    cursor: url('../resources/pictures/free-icon-cursor-8275661.png'), pointer;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+section {
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  }
+  
+a {
+    text-decoration: none;
+}
+ol, li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+  }
+hr {
+    border-color:rgb(166 248 241);
+    background-color: rgb(166 248 241);
+    color: rgb(166 248 241);
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.section_title {
+    font-size: 26px;
+    margin-bottom: 5px;
+    color:  var(--title-text-color);
+    text-align: center;
+}
+.subtitle {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.gallery {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(87, 186, 184);
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+   
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+

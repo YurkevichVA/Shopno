@@ -1,0 +1,70 @@
+.feedback-section {
+    background-color: var(--bgc-slider-section);
+}
+.feedback-block {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-block__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20px, 30px);
+    width: 460px;
+    height: 400px;
+    background-color: #dfdfe0f5;
+}
+.feedback-blok__slider {
+    display: none;
+}
+
+.block-feedback__carousel-navigation {
+    margin-left: 226px;
+    display: none;
+}
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 520px;
+    height: 300px;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #dfdfe0f5;
+    text-align: center;
+}
+.btn-swipe {
+    display: flex;
+    gap: 16px;
+}
+.btn-swipe__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc-section);
+    fill: var(--primary-text-color);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    width: 44px;
+    height: 44px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-swipe__item:hover,
+.btn-swipe__item:focus {
+    fill: var(--title-text-color);
+    background-color: var(--accent-color);
+}
+.feedback-block__slider-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-block__carousel {
+    perspective: 100px;
+    width: 370px;
+    height: 480px;
+    margin-left: 66px;
+}

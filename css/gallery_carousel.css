@@ -1,0 +1,109 @@
+/*============== SLIDER ABOUT US ==============*/
+*::-webkit-scrollbar {
+    width: 0;
+}
+*::-webkit-scrollbar {
+    width: 0;
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+* {
+    -ms-overflow-style: none;
+}
+.carousel {
+    
+    perspective: 100px;
+    width: 370px;
+    height: 480px;
+}
+
+.carousel-navigation {
+    position:absolute;
+    left: calc(50% - 20px);
+    bottom:0;
+    text-align: center;
+
+}
+
+.carousel-navigation-list,
+.carousel-navigation-item {
+    display: inline-block;
+}
+
+.carousel-navigation-button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #d4d6d5;
+    background-clip: content-box;
+    border: 1px solid transparent;
+    border-radius: 40%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+.carousel-navigation-button--current:visited {
+    background-color: var(--accent-color);
+}
+
+.image-wrapper {
+    width: 390px;
+    height: 460px;
+    overflow: hidden;
+}
+.image-wrapper__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20px, 30px);
+    width: 440px;
+    height: 400px;
+    background-color: #dfdfe0f5;
+}
+.slider {
+    display: flex;
+    animation: sliderAnimate 30s infinite ease;
+    width: 1560px;
+    height: 460px;
+    clear: both;
+    position: relative;
+}
+@keyframes sliderAnimate {
+    0% {left: 0;}
+    10% {left: -390px;}
+    20% {left: -780px;}
+    50% {left: -1170px;}
+    80% {left: -780px;}
+    90% {left: -390px;}
+    100% {left: 0;}
+}
+/*============== SLIDER OUR TEAM ==============*/
+.image-wrapper-team {
+    width: 370px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.slider-team {
+    display: flex;
+    animation: sliderAnimate 30s infinite ease;
+    width: 2220px;
+    height: 460px;
+    clear: both;
+    position: relative;
+}
+@keyframes sliderAnimate {
+    0% {left: 0;}
+    10% {left: -370px;}
+    20% {left: -740px;}
+    50% {left: -1110px;}
+    80% {left: -740px;}
+    90% {left: -370px;}
+    100% {left: 0;}
+}

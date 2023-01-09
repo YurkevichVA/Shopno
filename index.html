@@ -2,138 +2,608 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./general_styles.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="./style3.css">
-    <link rel="stylesheet" href="./gallery_carousel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general_styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/team.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/partners.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/gallery_carousel.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <title>Shopno</title>
 </head>
 <body>
-    <section class="first_section">
-        <div class="header">
+    <header id="top" class="header">
+        <div class="container main-nav">
             <a href="">
                 <div class="shopno_icon">
-                <span>SH<b class="O">O</b>PNO</span>
+                    SH<b class="shopno_icon--accent">O</b>PNO
                 </div>
             </a>
-            <div class="menu">
-                <div class="menu_strip"></div>
-                <div class="menu_strip"></div>
-                <div class="menu_strip"></div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#about-us">About us</a></li>
+                        <li><a class="menu__item" href="#fetured-works">Fetured works</a></li>
+                        <li><a class="menu__item" href="#small-team">Small team</a></li>
+                        <li><a class="menu__item" href="#what-they-says">What they says</a></li>
+                        <li><a class="menu__item" href="#con-us">Contact us</a></li>
+                </ul>
+              </div>
+        </div>
+    </header>
+    <main>
+        <section class="section darkest-section">
+            <div class="container hero">
+                <h1 class="hero__title">
+                    SAY HELLO TO <span class="hero__title--accent">SHOPNO!</span><br>
+                    <span class="hero__title--accent">AGANCY</span> CORPORATE SHOPNO THEME
+                </h1>
+                <a href="#con-us" class="btn">
+                    <div class="btn__contact_us">CONTACT US</div>
+                </a>
+            </div>
+        </section>
+        <!--about us-->
+     <section id="about-us" class="section service_section">
+        <div class="container">
+            <h2 class="section_title">ABOUT US</h2>
+            <p class="subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</p>
+        <div class="service-block">
+                <img class="servise-picture" src="./resources/pictures/gallery_1_s2.jpg" alt="office">
+            <div class="service-slider">
+                <div class="image-wrapper__background"></div>
+                <div class="carousel carousel1">
+                    <div class="image-wrapper">
+                        <div class="slider">
+                            <img src="./resources/pictures/gallery_1_s2.jpg" alt="office" width="390" >
+                            <img src="./resources/pictures/gallery_2_s2.jpg" alt="office" width="390" >
+                            <img src="./resources/pictures/gallery_3_s2.jpg" alt="office" width="390" >
+                            <img src="./resources/pictures/gallery_4_s2.jpg" alt="office" width="390" >
+                        </div>
+                    </div>
+                    <aside class="carousel-navigation">
+                        <ol class="carousel-navigation-list">
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide1" class="carousel-navigation-button carousel-navigation-button--current">go to slide 1</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide2" class="carousel-navigation-button">go to slide 2</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide3" class="carousel-navigation-button">go to slide 3</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide4" class="carousel-navigation-button">go to slide 4</a>
+                            </li>
+                        </ol>
+                    </aside>
+                </div>
+           </div>
+            <div class="service-text">
+                <div>
+                    <h3 class="service-title">WE ACTUALLY DO AMAZING WORKS</h3>
+                    <p class="service-desc">A visual approach is an approach to a runway al an airport conducted under instrument flight rules. The pilot must at all times have either the airpot or the preceding aircraft in approach correct sight conducted under instrument flight rules. The pilot must at all times.</p>
+                    <p class="service-desc">Preceding aircraf in approach correct sight conducted under instrument flight rules.</p>
+                    <h3 class="service-title">WHY WE ARE THE GREATE?</h3>
+                    <p class="service-desc">A visual approach is an approach to a runway al an airport conducted under instrument flight rules. Preceding aircraf in approach correct sight.</p>
+                </div>
             </div>
         </div>
-        <div class="content_1">
-            <div>
-                <span>SAY HELLO TO <span class="background_a9eee7">SHOPNO!</span></span>
-            </div>
-            <div>
-                <span><span class="background_a9eee7">AGANCY</span> CORPORATE SHOPNO THEME</span>
-            </div>
-            <a href="">
-                <div class="contact_us">CONTACT US</div>
-            </a>
-        </div>
-    </section>
-    <section class="second_section">
-        <div class="title1">
-            <h1>ABOUT US</h1>
-            <span class="subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</span>
-        </div>
-        <div class="content_2">
-            <section class="carousel carousel1">
-                <ol class="carousel-viewport">
-                    <li id="carousel-slide1" class="carousel-slide"></li>
-                    <li id="carousel-slide2" class="carousel-slide"></li>
-                    <li id="carousel-slide3" class="carousel-slide"></li>
-                    <li id="carousel-slide4" class="carousel-slide"></li>
-                </ol>
-                <aside class="carousel-navigation">
-                    <ol class="carousel-navigation-list">
-                        <li class="carousel-navigation-item">
-                            <a href="#carousel-slide1" class="carousel-navigation-button">go to slide 1</a>
+    </div>
+        </section>
+        <!--portfolio-->
+        <section id="fetured-works" class="section portfolio_section">
+            <div class="container">
+                <h2 class="section_title">FETURED WORKS</h2>
+                <p class="subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</p> 
+                    <ul class="portfolio_content">
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture_s3.jpg" >
                         </li>
-                        <li class="carousel-navigation-item">
-                            <a href="#carousel-slide2" class="carousel-navigation-button">go to slide 2</a>
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture2_s3.jpg" >
                         </li>
-                        <li class="carousel-navigation-item">
-                            <a href="#carousel-slide3" class="carousel-navigation-button">go to slide 3</a>
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture3_s3.jpg" >
                         </li>
-                        <li class="carousel-navigation-item">
-                            <a href="#carousel-slide4" class="carousel-navigation-button">go to slide 4</a>
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture4_s3.jpg" >
                         </li>
-                    </ol>
-                </aside>
-            </section>
-            <div class="text_second">
-                <div style="margin-right: 300px;">
-                    <h2>WE ACTUALLY DO AMAZING WORKS</h2>
-                    <p class="paragraph">A visual approach is an approach to a runway al an airport conducted under instrument flight rules. The pilot must at all times have either the airpot or the preceding aircraft in approach correct sight conducted under instrument flight rules. The pilot must at all times.</p>
-                    <p class="paragraph">Preceding aircraf in approach correct sight conducted under instrument flight rules.</p>
-                    <h2>WHY WE ARE THE GREATE?</h2>
-                    <p class="paragraph">A visual approach is an approach to a runway al an airport conducted under instrument flight rules. Preceding aircraf in approach correct sight.</p>
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture5_s3.jpg" >
+                        </li>
+                        <li class="portfolio_picture">
+                            <img class="portfolio_img" alt="portfolio" src="./resources/pictures/picture6_s3.jpg" >
+                        </li>
+                    </ul>
+            </div>
+        </section>
+        <hr>
+        <!--our team-->
+        <section id="small-team" class="section">
+        <div class="container">
+        <h2 class="section_title">SMALL TEAM</h2>
+        <p class="subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</p>
+        <ul class="team-list">
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team1.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Sang Woo Kim <span class="team-proff">/ UI Designer</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team2.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Joe Anderson <span class="team-proff">/ Developer</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team6.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Alissa Wenzel <span class="team-proff">/ UI Designer</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team4.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Alba Baptista <span class="team-proff">/ Scrum Master</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team5.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Victoria Phillips <span class="team-proff">/ UI Designer</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="team-thumb">
+                        <img src="./resources/pictures/team3.webp" alt="portret" width="300" height="370">
+                        <div class="team-modal">
+                            <h3 class="team-name">Timothee Chalamet <span class="team-proff">/ UI Designer</span></h3>
+                            <p class="team-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora aliquid.</p>
+                            <ul class="team-social-list">
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="#">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-social-list__item">
+                                    <a class="team-social-list__link" href="">
+                                        <svg width="15px" height="15px"> 
+                                            <use href="./resources/pictures/icon.svg/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+        </section>
+        <section id="what-they-says" class="section feedback-section">
+            <div class="container">
+                <h2 class="section_title">WHAT THEY SAYS</h2>
+                <p class="subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</p>
+                <div class="feedback-block">
+                    <div class="feedback-blok__slider">
+                        <div class="feedback-block__background"></div>
+                        <div class="feedback-block__carousel carousel1">
+                            <div class="image-wrapper-team">
+                                <div class="slider-team">
+                                    <img src="./resources/pictures/team1.webp" alt="office" width="370" >
+                                    <img src="./resources/pictures/team2.webp" alt="office" width="370" >
+                                    <img src="./resources/pictures/team6.webp" alt="office" width="370" >
+                                    <img src="./resources/pictures/team4.webp" alt="office" width="370" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                            <div class="team-card">
+                                <h3 class="team-name">Joe Anderson <span class="team-proff">/ UI/UX DESIGNER</span></h3>
+                                <p class="team-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vitae accusamus, placeat incidunt omnis nam error unde. Deleniti quis tenetur similique nostrum in! Tempora, reprehenderit perspiciatis consequuntur nemo ad tempore at quod eum libero illo, ut quae quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, esse.</p>
+                                <svg width="136px" height="30px"> 
+                                    <use href="./resources/pictures/icon.svg/sprite.svg#icon-rate"></use>
+                                </svg>
+                            </div>
+                </div>
+                <div class="feedback-block__slider-desc">    
+                    <aside class="block-feedback__carousel-navigation">
+                        <ol class="carousel-navigation-list">
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide1" class="carousel-navigation-button carousel-navigation-button--current">go to slide 1</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide2" class="carousel-navigation-button">go to slide 2</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide3" class="carousel-navigation-button">go to slide 3</a>
+                            </li>
+                            <li class="carousel-navigation-item">
+                                <a href="#carousel-slide4" class="carousel-navigation-button">go to slide 4</a>
+                            </li>
+                        </ol>
+                    </aside>
+                    <div class="btn-swipe">
+                        <a href="" class="btn-swipe__item">
+                            <svg width="28px" height="28px"> 
+                                <use href="./resources/pictures/icon.svg/sprite.svg#icon-clic2"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="btn-swipe__item">
+                            <svg width="28px" height="28px"> 
+                                <use href="./resources/pictures/icon.svg/sprite.svg#icon-clic"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="third_section">
-        <h1>FETURED WORKS</h1>
-        <span>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</span>
-        <div class="section3_content">
-            <div class="section3_content_row">
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture_s3.jpg">
+        </section>
+        <!--Our partners-->
+        <section class="section">
+            <h2 class="visually-hidden">Our partners</h2>
+            <div class="container">
+                <div class="partners-list">
+                    <ul class="partners-list--2">
+                        <li>
+                            <a class="partners-item" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-human"></use>
+                                </svg>
+                                Sport
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partners-item" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-bug"></use>
+                                </svg>
+                                Bug
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partners-item" href="">Swanser</a>
+                        </li>
+                        <li>
+                            <a class="partners-item partners-item--audio" href="">AudioPro</a>
+                        </li>
+                        <li>
+                            <a class="partners-item partners-item--infinity" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-circle"></use>
+                                </svg>
+                                Infinity
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partners-item" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-romb"></use>
+                                </svg>
+                            RKO 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="partners-list--1">
+                        <li>
+                            <a class="partners-item" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-romb"></use>
+                                </svg>
+                            RKO 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partners-item partners-item--audio" href="">AudioPro</a>
+                        </li>
+                        <li>
+                            <a class="partners-item partners-item--infinity" href="">
+                                <svg width="40px" height="40px"> 
+                                    <use class="partners-item__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-circle"></use>
+                                </svg>
+                                Infinity
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture2_s3.jpg">
-                </div>
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture3_s3.jpg">
-                </div class="section3_picture">
             </div>
-            <div class="section3_content_row">
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture4_s3.jpg">
-                </div>
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture5_s3.jpg">
-                </div>
-                <div class="section3_picture">
-                    <img class="section3_img" src="./resources/pictures/picture6_s3.jpg">
-                </div>
+        </section>
+    </main>
+    <footer>
+       <section id="con-us" class="section footer-info-section">
+        <div class="container footer-info">
+            <h2 class="visually-hidden">Contact</h2>
+            <div class="footer-form">
+                <form class="form">
+                    <label class="form-field">
+                        <span class="form-field-desc">Name*</span>
+                        <input class="form-input" type="text" name="user-name" required>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field-desc">Subject*</span>
+                        <input class="form-input" type="text" name="user-subject" required>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field-desc">E-mail*</span>
+                        <input class="form-input" type="email" name="user-email" required>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field-desc">Message*</span>
+                        <textarea class="form-meassage-field" name="user-message" required></textarea>
+                    </label>
+                    <button class="form-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="footer-con-nav">
+                <address> 
+                    <ul class="footer-con-list">
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">Address line 1</a>
+                        </li>
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">Address line 2</a>
+                        </li>
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">Phone: +567 763789</a>
+                        </li>
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">Fax: +384983 89037</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">Web: www.designagency.net</a>
+                        </li>
+                        <li class="footer-con-item">
+                            <a href="" class="footer-con__link">E-mail: info@designagency.net</a>
+                        </li>
+                    </ul>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.650430066252!2d30.72748194709082!3d46.48679267753852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631965dfc29b9%3A0xcb38625fe2099a1e!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINCQ0LrQsNC00LXQvNC40Y8g0KjQkNCT!5e0!3m2!1sru!2snl!4v1671990517942!5m2!1sru!2snl" width="405" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </address>
             </div>
         </div>
-    </section>
-    <hr>
-    <section>
-        <h1>SMALL TEAM</h1>
-        <span>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</span>
-        <div>
-            <img>
-        </div>
-        <div>
-            <img>
-        </div>
-        <div>
-            <img>
-        </div>
-        <div>
-            <img>
-        </div>
-        <div>
-            <img>
-        </div>
-        <div>
-            <img>
-        </div>
-    </section>
-    <section>
-        <h1>WHAT THEY SAYS</h1>
-        <span>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</span>
-        <div></div>
-        <div></div>
-    </section>
-    <section></section>
-    <footer></footer>
+       </section>
+       <section class="section footer-end-section">
+        <h2 class="visually-hidden">Follow us</h2>
+            <div class="container follow-block">
+                <p class="follow-us">FOLLOW US</p>
+                <ul class="follow-social">
+                    <li>
+                        <a href="" class="follow-social__link">
+                            <svg width="28px" height="28px"> 
+                                <use class="follow-social__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-pr"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="follow-social__link">
+                            <svg width="28px" height="28px"> 
+                                <use class="follow-social__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-tw1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="follow-social__link">
+                            <svg width="28px" height="28px"> 
+                                <use class="follow-social__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-fb1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="follow-social__link">
+                            <svg width="28px" height="28px"> 
+                                <use class="follow-social__svg" href="./resources/pictures/icon.svg/sprite.svg#icon-insta1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="follow-us-desc">Copyright Masum Parvej. All Right Reserved</p>
+                <article>
+                </article>
+                <div class="back-to-top-wrapper">
+                  <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
+                      <svg width="28px" height="28px"> 
+                          <use href="./resources/pictures/icon.svg/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                  </a>
+                </div>
+            </div>
+       </section>
+    </footer>
 </body>
 </html>
